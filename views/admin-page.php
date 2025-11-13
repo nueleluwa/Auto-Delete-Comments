@@ -167,10 +167,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 							</tr>
 						</thead>
 						<tbody>
-							<?php foreach ( array_reverse( array_slice( $log, -20 ) ) as $entry ) : ?>
+							<?php foreach ( array_reverse( array_slice( $log, -20 ) ) as $log_entry ) : ?>
 								<tr>
-									<td><?php echo esc_html( wp_date( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), strtotime( $entry['date'] ) ) ); ?></td>
-									<td><?php echo esc_html( number_format_i18n( $entry['count'] ) ); ?></td>
+									<td><?php echo esc_html( wp_date( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), strtotime( $log_entry['date'] ) ) ); ?></td>
+									<td><?php echo esc_html( number_format_i18n( $log_entry['count'] ) ); ?></td>
 								</tr>
 							<?php endforeach; ?>
 						</tbody>
@@ -198,9 +198,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 						<p>
 							<strong><?php echo esc_html__( 'Next Run:', 'auto-delete-comments' ); ?></strong><br>
 							<?php
-							$next_run = wp_next_scheduled( $cron_hook );
-							if ( $next_run ) {
-								echo esc_html( wp_date( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), $next_run ) );
+							$adc_next_run = wp_next_scheduled( $cron_hook );
+							if ( $adc_next_run ) {
+								echo esc_html( wp_date( get_option( 'date_format' ) . ' ' . get_option( 'time_format' ), $adc_next_run ) );
 							} else {
 								echo esc_html__( 'Not scheduled', 'auto-delete-comments' );
 							}
@@ -253,6 +253,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 							<a href="https://instagram.com/nueleluwa" target="_blank" rel="noopener noreferrer">Instagram</a>
 						</div>
 					</div>
+				</div>
+			</div>
+
+			<!-- Support Card -->
+			<div class="adc-card">
+				<h3><?php echo esc_html__( '☕ Support Development', 'auto-delete-comments' ); ?></h3>
+				<p><?php echo esc_html__( 'This plugin is free and open-source. If you find it helpful, please consider supporting its development!', 'auto-delete-comments' ); ?></p>
+				<div class="adc-support-actions">
+					<a href="https://buymeacoffee.com/nueleluwa" target="_blank" rel="noopener noreferrer" class="button button-primary" style="background: #FFDD00; border-color: #FFDD00; color: #000; text-decoration: none; margin-right: 8px;">
+						<?php echo esc_html__( '☕ Buy Me a Coffee', 'auto-delete-comments' ); ?>
+					</a>
+					<a href="https://github.com/nueleluwa/Auto-Delete-Comments" target="_blank" rel="noopener noreferrer" class="button" style="text-decoration: none;">
+						<?php echo esc_html__( '⭐ Star on GitHub', 'auto-delete-comments' ); ?>
+					</a>
 				</div>
 			</div>
 

@@ -226,12 +226,7 @@ class Auto_Delete_Comments {
 
 		// Schedule the event.
 		if ( ! wp_next_scheduled( $this->cron_hook ) ) {
-			$scheduled = wp_schedule_event( time(), $interval_key, $this->cron_hook );
-			
-			// Debug: Log scheduling attempt.
-			if ( false === $scheduled ) {
-				error_log( 'Auto Delete Comments: Failed to schedule cron job' );
-			}
+			wp_schedule_event( time(), $interval_key, $this->cron_hook );
 		}
 	}
 
@@ -301,7 +296,6 @@ class Auto_Delete_Comments {
 		
 		// If no statuses selected, return early.
 		if ( empty( $statuses ) ) {
-			error_log( 'Auto Delete Comments: No comment types selected for deletion' );
 			return 0;
 		}
 
@@ -330,8 +324,6 @@ class Auto_Delete_Comments {
 		foreach ( $comment_ids as $comment_id ) {
 			if ( wp_delete_comment( $comment_id, true ) ) {
 				++$deleted_count;
-			} else {
-				error_log( 'Auto Delete Comments: Failed to delete comment ID ' . $comment_id );
 			}
 		}
 

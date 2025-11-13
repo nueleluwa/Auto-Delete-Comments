@@ -1,6 +1,6 @@
 === Auto Delete Comments ===
 Contributors: luwie93
-Donate link: https://brela.ng
+Donate link: https://buymeacoffee.com/nueleluwa
 Tags: comments, spam, auto-delete, cleanup, moderation, batch-delete, automation
 Requires at least: 5.8
 Tested up to: 6.4

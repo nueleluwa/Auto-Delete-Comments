@@ -245,6 +245,41 @@ input:checked + .adc-slider:before {
     font-weight: normal;
 }
 
+/* Support Card */
+.adc-support-actions {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.adc-support-actions .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 12px;
+    border-radius: 3px;
+    font-size: 13px;
+    line-height: 1.5;
+    transition: all 0.2s ease;
+}
+
+.adc-support-actions .button-primary {
+    box-shadow: none;
+}
+
+.adc-support-actions .button-primary:hover {
+    background: #FFD700 !important;
+    border-color: #FFD700 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.adc-support-actions .button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 /* Loading State */
 .adc-loading {
     opacity: 0.6;
