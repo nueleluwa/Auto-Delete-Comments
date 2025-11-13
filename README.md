@@ -14,7 +14,7 @@ A modern, production-ready WordPress plugin that automatically deletes comments 
 ![Version](https://img.shields.io/badge/Version-2.0.1-orange)
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
 
-### Quality Ratings
+### 🎯 Quality Ratings
 - **Code Quality:** A+ (WordPress VIP Standards)
 - **Security:** A+ (No vulnerabilities)
 - **Performance:** Excellent (Optimized queries)
@@ -22,7 +22,7 @@ A modern, production-ready WordPress plugin that automatically deletes comments 
 
 ---
 
-## Features
+## 🚀 Features
 
 ### Core Features
 - ✅ **Automatic Comment Deletion** - Schedule batch deletions with WordPress cron
@@ -34,18 +34,18 @@ A modern, production-ready WordPress plugin that automatically deletes comments 
 - ✅ **Manual Controls** - Delete batch immediately with one click
 
 ### Professional Interface (v2.0+)
-- **Real-Time Statistics** - Live comment counts with auto-refresh
-- **Advanced Analytics** - 30-day tracking with Chart.js visualizations
-- **REST API** - Full API access for headless WordPress
-- **Modern Dashboard** - Clean, WordPress-native design
-- **Author Section** - Professional plugin branding
-- **Performance Optimized** - Efficient queries and minimal resource usage
-- **Security Hardened** - WordPress VIP coding standards compliant
-- **Fully Responsive** - Mobile-first design
+- 📊 **Real-Time Statistics** - Live comment counts with auto-refresh
+- 📈 **Advanced Analytics** - 30-day tracking with Chart.js visualizations
+- 🔌 **REST API** - Full API access for headless WordPress
+- 🎨 **Modern Dashboard** - Clean, WordPress-native design
+- 👤 **Author Section** - Professional plugin branding
+- ⚡ **Performance Optimized** - Efficient queries and minimal resource usage
+- 🔒 **Security Hardened** - WordPress VIP coding standards compliant
+- 📱 **Fully Responsive** - Mobile-first design
 
+---
 
-
-## Installation
+## 📦 Installation
 
 ### Method 1: Upload ZIP
 1. Download the latest release
@@ -60,15 +60,15 @@ A modern, production-ready WordPress plugin that automatically deletes comments 
 
 ---
 
-## Quick Start
+## 🎯 Quick Start
 
 ### Basic Configuration (Safe)
 ```
-Enable Auto Delete: OFF (configure first)
-Batch Size: 15 comments
-Interval: 5 minutes
-Delete Types: Spam ✓ | Trash ✓
-Older Than: 0 days
+✅ Enable Auto Delete: OFF (configure first)
+📊 Batch Size: 15 comments
+⏱️ Interval: 5 minutes
+🗑️ Delete Types: Spam ✓ | Trash ✓
+📅 Older Than: 0 days
 ```
 
 ### First Steps
@@ -81,7 +81,7 @@ Older Than: 0 days
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
 ### Main Dashboard
 The plugin features a modern, clean interface with:
@@ -102,7 +102,7 @@ The plugin features a modern, clean interface with:
 
 ---
 
-## Configuration Options
+## 🔧 Configuration Options
 
 ### Settings
 | Setting | Range | Default | Description |
@@ -120,7 +120,7 @@ The plugin features a modern, clean interface with:
 
 ---
 
-## Analytics Dashboard
+## 📊 Analytics Dashboard
 
 ### Metrics Tracked
 - **Total Deleted** - All-time comment deletions
@@ -138,7 +138,7 @@ The plugin features a modern, clean interface with:
 
 ---
 
-## REST API
+## 🔌 REST API
 
 ### Endpoints
 
@@ -183,7 +183,7 @@ Requires `manage_options` capability. Use WordPress nonce for AJAX or standard a
 
 ---
 
-## Use Cases
+## 💡 Use Cases
 
 ### 1. Spam Control (Most Common)
 **Goal:** Keep spam under control automatically
@@ -215,7 +215,7 @@ Requires `manage_options` capability. Use WordPress nonce for AJAX or standard a
 
 ---
 
-## Technical Details
+## 🛠️ Technical Details
 
 ### Requirements
 - **WordPress:** 5.8 or higher
@@ -246,19 +246,19 @@ Requires `manage_options` capability. Use WordPress nonce for AJAX or standard a
 
 ---
 
-## Changelog
+## 📝 Changelog
 
 ### Version 2.0.1 (2024-11-13) - Current Version
 **Critical Bug Fixes & Improvements**
-- **Fixed:** Template variable scope issues (`$this->` usage in included files)
-- **Fixed:** Cron scheduling reliability (intervals now registered early)
-- **Fixed:** Missing output escaping (XSS vulnerability eliminated)
-- **Added:** Settings validation (prevents enabling without comment types)
-- **Added:** Professional author section with photo and social links
-- **Added:** Comprehensive error logging throughout
-- **Improved:** WordPress-native design for author section
-- **Added:** Extensive documentation (10+ guides)
-- **Added:** Code quality validation script
+- 🐛 **Fixed:** Template variable scope issues (`$this->` usage in included files)
+- 🐛 **Fixed:** Cron scheduling reliability (intervals now registered early)
+- 🔒 **Fixed:** Missing output escaping (XSS vulnerability eliminated)
+- ✨ **Added:** Settings validation (prevents enabling without comment types)
+- ✨ **Added:** Professional author section with photo and social links
+- ✨ **Added:** Comprehensive error logging throughout
+- 🎨 **Improved:** WordPress-native design for author section
+- 📚 **Added:** Extensive documentation (10+ guides)
+- 🛠️ **Added:** Code quality validation script
 
 **Quality Improvements:**
 - A+ Security rating (all vulnerabilities fixed)
@@ -268,36 +268,36 @@ Requires `manage_options` capability. Use WordPress nonce for AJAX or standard a
 
 ### Version 2.0.0 (2024-11-12)
 **Major Update - Modern Interface**
-- Added real-time statistics dashboard
-- Added advanced analytics with Chart.js
-- Added REST API endpoints
-- Added modern card-based UI design
-- Added manual batch deletion controls
-- Added 30-day analytics tracking
-- Added activity logging (last 100 runs)
-- Enhanced user interface
-- Improved data visualization
-- Comprehensive documentation
+- ✨ Added real-time statistics dashboard
+- ✨ Added advanced analytics with Chart.js
+- ✨ Added REST API endpoints
+- ✨ Added modern card-based UI design
+- ✨ Added manual batch deletion controls
+- ✨ Added 30-day analytics tracking
+- ✨ Added activity logging (last 100 runs)
+- 🔧 Enhanced user interface
+- 🔧 Improved data visualization
+- 📚 Comprehensive documentation
 
 ### Version 1.1.0 (2024-11-12)
 **Security & Bug Fixes**
-- Fixed URI error by limiting batch size to 50
-- Fixed cron scheduling bug
-- Added comprehensive security measures
-- 100% WordPress Coding Standards compliance
-- Performance optimizations
-- Better error handling
+- 🐛 Fixed URI error by limiting batch size to 50
+- 🐛 Fixed cron scheduling bug
+- 🔒 Added comprehensive security measures
+- 📐 100% WordPress Coding Standards compliance
+- ⚡ Performance optimizations
+- 🔧 Better error handling
 
 ### Version 1.0.0 (2024-11-12)
 **Initial Release**
-- Basic comment deletion functionality
-- Configurable scheduling
-- Comment type selection
-- Activity logging
+- ✨ Basic comment deletion functionality
+- ✨ Configurable scheduling
+- ✨ Comment type selection
+- ✨ Activity logging
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please follow these guidelines:
 
@@ -318,7 +318,7 @@ cd Auto-Delete-Comments
 
 ---
 
-## Support
+## 📞 Support
 
 ### Documentation
 - [FIXES.md](FIXES.md) - Technical details of all bug fixes
@@ -348,7 +348,7 @@ Have an idea? We'd love to hear it!
 
 ---
 
-## License
+## 📄 License
 
 This plugin is licensed under the GPL v2 or later.
 
@@ -383,7 +383,7 @@ Emmanuel is the Co-Founder of **Brela**, a website support agency specializing i
 
 ---
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 - WordPress Community
 - Brela Team (initial development support)
@@ -392,7 +392,7 @@ Emmanuel is the Co-Founder of **Brela**, a website support agency specializing i
 
 ---
 
-## Links
+## 🔗 Links
 
 - **GitHub Repository:** [github.com/nueleluwa/Auto-Delete-Comments](https://github.com/nueleluwa/Auto-Delete-Comments)
 - **Author GitHub:** [github.com/nueleluwa](https://github.com/nueleluwa)
