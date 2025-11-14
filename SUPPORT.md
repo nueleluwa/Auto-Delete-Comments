@@ -1,27 +1,27 @@
-# 💖 Support Auto Delete Comments
+# Support Auto Delete Comments
 
 Thank you for using Auto Delete Comments! If you find this plugin helpful, please consider supporting its development.
 
----
 
-## ☕ Buy Me a Coffee
+
+## Buy Me a Coffee
 
 The easiest way to support this project is by buying me a coffee!
 
 **→ [Support on Buy Me a Coffee](https://buymeacoffee.com/nueleluwa)**
 
 Every contribution helps maintain and improve this plugin. Your support means:
-- 🐛 Faster bug fixes
-- ✨ More features
-- 📚 Better documentation
-- 🔒 Security updates
-- 💬 Dedicated support
+- Faster bug fixes
+- More features
+- Better documentation
+- Security updates
+- Dedicated support
 
----
 
-## 🌟 Other Ways to Support
 
-### 1. Leave a Review ⭐
+## Other Ways to Support
+
+### 1. Leave a Review 
 If you're happy with this plugin, please leave a 5-star review on WordPress.org!
 - Helps other users discover the plugin
 - Motivates continued development
@@ -29,18 +29,18 @@ If you're happy with this plugin, please leave a 5-star review on WordPress.org!
 
 **→ [Leave a Review](https://wordpress.org/plugins/auto-delete-comments/)** (after plugin is live)
 
-### 2. Star on GitHub ⭐
+### 2. Star on GitHub 
 Show your support by starring the repository!
 - **→ [Star on GitHub](https://github.com/nueleluwa/Auto-Delete-Comments)**
 
-### 3. Share with Others 📢
+### 3. Share with Others 
 Help spread the word:
 - Share on social media
 - Recommend to other WordPress users
 - Write a blog post about it
 - Create a tutorial video
 
-### 4. Contribute Code 💻
+### 4. Contribute Code 
 Technical contributions are always welcome:
 - Fix bugs
 - Add features
@@ -57,9 +57,9 @@ Help improve the plugin:
 
 **→ [Report Issues](https://github.com/nueleluwa/Auto-Delete-Comments/issues)**
 
----
 
-## 💼 Professional Services
+
+## Professional Services
 
 Need custom WordPress development or support?
 
@@ -73,11 +73,11 @@ Need custom WordPress development or support?
 - Security hardening
 - Ongoing maintenance
 
-**→ [Visit Brela.ng](https://brela.ng)**
+**→ [Visit Brela.agency](https://brela.agency)**
 
----
 
-## 🙏 Why Support Matters
+
+## Why Support Matters
 
 This plugin is **free and open-source**, but development takes significant time and effort:
 
@@ -89,20 +89,20 @@ This plugin is **free and open-source**, but development takes significant time 
 
 Your support helps make continued development sustainable!
 
----
 
-## 💝 Sponsor Benefits
+
+## Sponsor Benefits
 
 When you support this project, you help:
-- ✅ Keep the plugin free for everyone
-- ✅ Ensure regular updates and improvements
-- ✅ Get priority support for issues
-- ✅ Influence future feature development
-- ✅ Support the WordPress open-source community
+- Keep the plugin free for everyone
+- Ensure regular updates and improvements
+- Get priority support for issues
+- Influence future feature development
+- Support the WordPress open-source community
 
----
 
-## 📊 Support Impact
+
+## Support Impact
 
 Here's what your support achieves:
 
@@ -114,9 +114,9 @@ Here's what your support achieves:
 
 Every contribution, no matter the size, makes a difference!
 
----
 
-## 🎁 Supporter Recognition
+
+## Supporter Recognition
 
 Major contributors (with permission) will be:
 - Listed in the README
@@ -124,9 +124,9 @@ Major contributors (with permission) will be:
 - Given priority support access
 - Invited to beta test new features
 
----
 
-## 💬 Get in Touch
+
+## Get in Touch
 
 Have questions about supporting the project?
 
@@ -134,29 +134,29 @@ Have questions about supporting the project?
 - **GitHub:** [@nueleluwa](https://github.com/nueleluwa)
 - **WordPress:** [@luwie93](https://profiles.wordpress.org/luwie93/)
 - **Instagram:** [@nueleluwa](https://instagram.com/nueleluwa)
-- **Website:** [Brela.ng](https://brela.ng)
+- **Website:** [Brela.agency](https://brela.agency)
 
----
 
-## 🌍 About the Developer
 
-**Emmanuel Eluwa** is an accomplished Web Developer and WordPress Technical Support specialist with nearly a decade of experience. He's passionate about creating reliable, production-ready WordPress solutions that help businesses succeed.
+## About the Developer
+
+**Emmanuel Eluwa** is an accomplished Web Developer and WordPress Technical Support specialist with a decade of experience. He's passionate about creating reliable, production-ready WordPress solutions that help businesses succeed.
 
 Based in Nigeria, Emmanuel is the Co-Founder of **Brela**, a website support agency serving startups and businesses across Africa.
 
----
 
-## 🔗 Quick Links
+
+## Quick Links
 
 - **☕ Support:** [Buy Me a Coffee](https://buymeacoffee.com/nueleluwa)
 - **⭐ GitHub:** [Star Repository](https://github.com/nueleluwa/Auto-Delete-Comments)
-- **💼 Services:** [Brela.ng](https://brela.ng)
+- **💼 Services:** [Brela.agency](https://brela.agency)
 - **📝 WordPress Profile:** [luwie93](https://profiles.wordpress.org/luwie93/)
 - **📷 Instagram:** [@nueleluwa](https://instagram.com/nueleluwa)
 
----
 
-## ❤️ Thank You!
+
+## Thank You!
 
 Thank you for using Auto Delete Comments and for considering supporting its development. Your support, whether financial or through contributions, reviews, or sharing, helps keep this project alive and thriving.
 
