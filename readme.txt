@@ -77,7 +77,7 @@ For support, bug reports, or feature requests:
 
 = Professional Services =
 
-Need custom WordPress development? Visit [Brela.ng](https://brela.ng) for professional WordPress solutions.
+Need custom WordPress development? Visit [Brela.agency](https://brela.agency) for professional WordPress solutions.
 
 == Installation ==
 
@@ -306,4 +306,4 @@ Response:
 * Contributions welcome!
 
 = Professional Support =
-For custom development or professional WordPress services, visit [Brela.ng](https://brela.ng)
+For custom development or professional WordPress services, visit [Brela.agency](https://brela.agency)
