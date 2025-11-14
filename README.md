@@ -20,9 +20,9 @@ A modern, production-ready WordPress plugin that automatically deletes comments 
 - **Performance:** Excellent (Optimized queries)
 - **Documentation:** Comprehensive (10+ guides)
 
----
 
-## 🚀 Features
+
+## Features
 
 ### Core Features
 - ✅ **Automatic Comment Deletion** - Schedule batch deletions with WordPress cron
@@ -34,14 +34,14 @@ A modern, production-ready WordPress plugin that automatically deletes comments 
 - ✅ **Manual Controls** - Delete batch immediately with one click
 
 ### Professional Interface (v2.0+)
-- 📊 **Real-Time Statistics** - Live comment counts with auto-refresh
-- 📈 **Advanced Analytics** - 30-day tracking with Chart.js visualizations
-- 🔌 **REST API** - Full API access for headless WordPress
-- 🎨 **Modern Dashboard** - Clean, WordPress-native design
-- 👤 **Author Section** - Professional plugin branding
-- ⚡ **Performance Optimized** - Efficient queries and minimal resource usage
-- 🔒 **Security Hardened** - WordPress VIP coding standards compliant
-- 📱 **Fully Responsive** - Mobile-first design
+- **Real-Time Statistics** - Live comment counts with auto-refresh
+- **Advanced Analytics** - 30-day tracking with Chart.js visualizations
+- **REST API** - Full API access for headless WordPress
+- **Modern Dashboard** - Clean, WordPress-native design
+- **Author Section** - Professional plugin branding
+- **Performance Optimized** - Efficient queries and minimal resource usage
+- **Security Hardened** - WordPress VIP coding standards compliant
+- **Fully Responsive** - Mobile-first design
 
 ---
 
@@ -58,17 +58,17 @@ A modern, production-ready WordPress plugin that automatically deletes comments 
 2. Upload to `/wp-content/plugins/`
 3. Activate via WordPress admin
 
----
 
-## 🎯 Quick Start
+
+## Quick Start
 
 ### Basic Configuration (Safe)
 ```
-✅ Enable Auto Delete: OFF (configure first)
-📊 Batch Size: 15 comments
-⏱️ Interval: 5 minutes
-🗑️ Delete Types: Spam ✓ | Trash ✓
-📅 Older Than: 0 days
+Enable Auto Delete: OFF (configure first)
+Batch Size: 15 comments
+Interval: 5 minutes
+Delete Types: Spam ✓ | Trash ✓
+Older Than: 0 days
 ```
 
 ### First Steps
@@ -79,9 +79,9 @@ A modern, production-ready WordPress plugin that automatically deletes comments 
 5. Check deletion history
 6. Enable automatic deletion
 
----
 
-## 📸 Screenshots
+
+## Screenshots
 
 ### Main Dashboard
 The plugin features a modern, clean interface with:
@@ -100,9 +100,9 @@ The plugin features a modern, clean interface with:
 5. **Deletion History** - Table showing date, time, and count
 6. **Author Card** - Photo, bio, and social media links (GitHub, WordPress, Instagram)
 
----
 
-## 🔧 Configuration Options
+
+## Configuration Options
 
 ### Settings
 | Setting | Range | Default | Description |
@@ -120,7 +120,7 @@ The plugin features a modern, clean interface with:
 
 ---
 
-## 📊 Analytics Dashboard
+## Analytics Dashboard
 
 ### Metrics Tracked
 - **Total Deleted** - All-time comment deletions
@@ -136,9 +136,9 @@ The plugin features a modern, clean interface with:
 - **Manual Actions** - One-click batch deletion for testing
 - **Status Panel** - Current configuration and next scheduled run
 
----
 
-## 🔌 REST API
+
+## REST API
 
 ### Endpoints
 
@@ -181,9 +181,9 @@ GET /wp-json/auto-delete-comments/v1/analytics
 ### Authentication
 Requires `manage_options` capability. Use WordPress nonce for AJAX or standard authentication for REST API.
 
----
 
-## 💡 Use Cases
+
+## Use Cases
 
 ### 1. Spam Control (Most Common)
 **Goal:** Keep spam under control automatically
@@ -193,7 +193,7 @@ Requires `manage_options` capability. Use WordPress nonce for AJAX or standard a
 
 **Result:** Deletes 20 spam comments every 5 minutes
 
----
+
 
 ### 2. Old Comment Cleanup
 **Goal:** Remove old spam without touching recent
@@ -203,7 +203,7 @@ Requires `manage_options` capability. Use WordPress nonce for AJAX or standard a
 
 **Result:** Deletes spam older than 30 days only
 
----
+
 
 ### 3. Database Maintenance
 **Goal:** Periodic cleanup of all unwanted comments
@@ -213,9 +213,9 @@ Requires `manage_options` capability. Use WordPress nonce for AJAX or standard a
 
 **Result:** Weekly maintenance keeping database clean
 
----
 
-## 🛠️ Technical Details
+
+## Technical Details
 
 ### Requirements
 - **WordPress:** 5.8 or higher
@@ -230,12 +230,12 @@ Requires `manage_options` capability. Use WordPress nonce for AJAX or standard a
 - Maximum 50 comments per batch (prevents URI errors)
 
 ### Security
-- ✅ Nonce verification on all AJAX
-- ✅ Capability checks (`manage_options`)
-- ✅ Input sanitization with `absint()`
-- ✅ Output escaping with `esc_html()`, `esc_attr()`
-- ✅ No direct SQL queries
-- ✅ WordPress Coding Standards compliant
+- Nonce verification on all AJAX
+- Capability checks (`manage_options`)
+- Input sanitization with `absint()`
+- Output escaping with `esc_html()`, `esc_attr()`
+- No direct SQL queries
+- WordPress Coding Standards compliant
 
 ### Architecture
 - Singleton pattern
@@ -244,21 +244,21 @@ Requires `manage_options` capability. Use WordPress nonce for AJAX or standard a
 - Analytics tracking system
 - Modular design
 
----
 
-## 📝 Changelog
+
+## Changelog
 
 ### Version 2.0.1 (2024-11-13) - Current Version
 **Critical Bug Fixes & Improvements**
-- 🐛 **Fixed:** Template variable scope issues (`$this->` usage in included files)
-- 🐛 **Fixed:** Cron scheduling reliability (intervals now registered early)
-- 🔒 **Fixed:** Missing output escaping (XSS vulnerability eliminated)
-- ✨ **Added:** Settings validation (prevents enabling without comment types)
-- ✨ **Added:** Professional author section with photo and social links
-- ✨ **Added:** Comprehensive error logging throughout
-- 🎨 **Improved:** WordPress-native design for author section
-- 📚 **Added:** Extensive documentation (10+ guides)
-- 🛠️ **Added:** Code quality validation script
+- **Fixed:** Template variable scope issues (`$this->` usage in included files)
+- **Fixed:** Cron scheduling reliability (intervals now registered early)
+- **Fixed:** Missing output escaping (XSS vulnerability eliminated)
+- **Added:** Settings validation (prevents enabling without comment types)
+  **Added:** Professional author section with photo and social links
+- **Added:** Comprehensive error logging throughout
+- **Improved:** WordPress-native design for author section
+- **Added:** Extensive documentation (10+ guides)
+- **Added:** Code quality validation script
 
 **Quality Improvements:**
 - A+ Security rating (all vulnerabilities fixed)
@@ -268,36 +268,36 @@ Requires `manage_options` capability. Use WordPress nonce for AJAX or standard a
 
 ### Version 2.0.0 (2024-11-12)
 **Major Update - Modern Interface**
-- ✨ Added real-time statistics dashboard
-- ✨ Added advanced analytics with Chart.js
-- ✨ Added REST API endpoints
-- ✨ Added modern card-based UI design
-- ✨ Added manual batch deletion controls
-- ✨ Added 30-day analytics tracking
-- ✨ Added activity logging (last 100 runs)
-- 🔧 Enhanced user interface
-- 🔧 Improved data visualization
-- 📚 Comprehensive documentation
+- Added real-time statistics dashboard
+- Added advanced analytics with Chart.js
+- Added REST API endpoints
+- Added modern card-based UI design
+- Added manual batch deletion controls
+- Added 30-day analytics tracking
+- Added activity logging (last 100 runs)
+- Enhanced user interface
+- Improved data visualization
+- Comprehensive documentation
 
 ### Version 1.1.0 (2024-11-12)
 **Security & Bug Fixes**
-- 🐛 Fixed URI error by limiting batch size to 50
-- 🐛 Fixed cron scheduling bug
-- 🔒 Added comprehensive security measures
-- 📐 100% WordPress Coding Standards compliance
-- ⚡ Performance optimizations
-- 🔧 Better error handling
+- Fixed URI error by limiting batch size to 50
+- Fixed cron scheduling bug
+- Added comprehensive security measures
+- 100% WordPress Coding Standards compliance
+- Performance optimizations
+- Better error handling
 
 ### Version 1.0.0 (2024-11-12)
 **Initial Release**
-- ✨ Basic comment deletion functionality
-- ✨ Configurable scheduling
-- ✨ Comment type selection
-- ✨ Activity logging
+- Basic comment deletion functionality
+- Configurable scheduling
+- Comment type selection
+- Activity logging
 
----
 
-## 🤝 Contributing
+
+## Contributing
 
 Contributions are welcome! Please follow these guidelines:
 
@@ -318,7 +318,7 @@ cd Auto-Delete-Comments
 
 ---
 
-## 📞 Support
+## Support
 
 ### Documentation
 - [FIXES.md](FIXES.md) - Technical details of all bug fixes
@@ -346,9 +346,9 @@ Have an idea? We'd love to hear it!
 - Describe the feature and use case
 - Explain how it would benefit users
 
----
+-
 
-## 📄 License
+## License
 
 This plugin is licensed under the GPL v2 or later.
 
@@ -366,44 +366,44 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
 GNU General Public License for more details.
 ```
 
----
 
-## 👤 About the Author
 
-**Emmanuel Eluwa** is an accomplished Web Developer and WordPress Technical Support specialist with nearly a decade of experience in the industry. He specializes in creating reliable, production-ready WordPress solutions.
+## About the Author
+
+**Emmanuel Eluwa** is an accomplished Web Developer and WordPress Technical Support specialist with a decade of experience in the industry. He specializes in creating reliable, production-ready WordPress solutions.
 
 ### Connect
 - **GitHub:** [github.com/nueleluwa](https://github.com/nueleluwa)
 - **WordPress:** [profiles.wordpress.org/luwie93](https://profiles.wordpress.org/luwie93/)
 - **Instagram:** [instagram.com/nueleluwa](https://instagram.com/nueleluwa)
-- **Website:** [Brela.ng](https://brela.ng)
+- **Website:** [Brela.agency](https://brela.agency)
 
 ### Professional Services
 Emmanuel is the Co-Founder of **Brela**, a website support agency specializing in WordPress solutions for startups and businesses across Africa.
 
----
 
-## 🙏 Acknowledgments
+
+## Acknowledgments
 
 - WordPress Community
 - Brela Team (initial development support)
 - Chart.js for visualization library
 - Contributors and testers
 
----
 
-## 🔗 Links
+
+## Links
 
 - **GitHub Repository:** [github.com/nueleluwa/Auto-Delete-Comments](https://github.com/nueleluwa/Auto-Delete-Comments)
 - **Author GitHub:** [github.com/nueleluwa](https://github.com/nueleluwa)
 - **WordPress Profile:** [profiles.wordpress.org/luwie93](https://profiles.wordpress.org/luwie93/)
 - **License:** [GPL v2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 - **Support:** [GitHub Issues](https://github.com/nueleluwa/Auto-Delete-Comments/issues)
-- **Professional Services:** [Brela.ng](https://brela.ng)
+- **Professional Services:** [Brela.agency](https://brela.agency)
 
----
 
-## ⭐ Show Your Support
+
+## Show Your Support
 
 If this plugin helps you manage your WordPress comments, please consider:
 - ⭐ **Star** the repository on [GitHub](https://github.com/nueleluwa/Auto-Delete-Comments)
@@ -423,7 +423,7 @@ Every bit of support helps make this plugin better for everyone!
 
 WordPress Development | Technical Support | Plugin Development
 
-[GitHub](https://github.com/nueleluwa) • [WordPress Profile](https://profiles.wordpress.org/luwie93/) • [Brela](https://brela.ng)
+[GitHub](https://github.com/nueleluwa) • [WordPress Profile](https://profiles.wordpress.org/luwie93/) • [Brela](https://brela.agency)
 
 ---
 
