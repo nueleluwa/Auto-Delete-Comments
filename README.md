@@ -14,7 +14,7 @@ A modern, production-ready WordPress plugin that automatically deletes comments 
 ![Version](https://img.shields.io/badge/Version-2.0.1-orange)
 ![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen)
 
-### 🎯 Quality Ratings
+### Quality Ratings
 - **Code Quality:** A+ (WordPress VIP Standards)
 - **Security:** A+ (No vulnerabilities)
 - **Performance:** Excellent (Optimized queries)
@@ -25,13 +25,13 @@ A modern, production-ready WordPress plugin that automatically deletes comments 
 ## Features
 
 ### Core Features
-- ✅ **Automatic Comment Deletion** - Schedule batch deletions with WordPress cron
-- ✅ **Flexible Scheduling** - Every 1-60 minutes with reliable cron system
-- ✅ **Selective Deletion** - Choose comment types (spam, pending, approved, trash)
-- ✅ **Age Filtering** - Delete only comments older than X days
-- ✅ **Batch Processing** - 1-50 comments per run (prevents server errors)
-- ✅ **Activity Logging** - Track last 100 deletion activities
-- ✅ **Manual Controls** - Delete batch immediately with one click
+- **Automatic Comment Deletion** - Schedule batch deletions with WordPress cron
+- **Flexible Scheduling** - Every 1-60 minutes with reliable cron system
+- **Selective Deletion** - Choose comment types (spam, pending, approved, trash)
+- **Age Filtering** - Delete only comments older than X days
+- **Batch Processing** - 1-50 comments per run (prevents server errors)
+- **Activity Logging** - Track last 100 deletion activities
+- **Manual Controls** - Delete batch immediately with one click
 
 ### Professional Interface (v2.0+)
 - **Real-Time Statistics** - Live comment counts with auto-refresh
@@ -43,9 +43,9 @@ A modern, production-ready WordPress plugin that automatically deletes comments 
 - **Security Hardened** - WordPress VIP coding standards compliant
 - **Fully Responsive** - Mobile-first design
 
----
 
-## 📦 Installation
+
+## Installation
 
 ### Method 1: Upload ZIP
 1. Download the latest release
