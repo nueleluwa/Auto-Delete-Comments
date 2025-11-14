@@ -2,31 +2,31 @@
 
 ## Version 1.1.0 - Security Hardened & WordPress Coding Standards Compliant
 
----
+
 
 ## CRITICAL ISSUES FIXED
 
-### 1. **URI Error with 100 Comments - FIXED** ✅
+### 1. **URI Error with 100 Comments - FIXED** 
 **Issue:** Deleting 100 comments at once could cause URI too long errors
 **Fix:** Limited batch size to maximum of 50 comments
 - Changed validation from `max(1, min(100, ...))` to `max(1, min(50, ...))`
 - Updated UI to reflect the 50 comment limit
 - Added user notification when trying to set value above 50
 
-### 2. **Cron Scheduling Bug - FIXED** ✅
+### 2. **Cron Scheduling Bug - FIXED** 
 **Issue:** `sanitize_settings()` called `schedule_cron()` before options were saved, causing undefined index errors
 **Fix:** Implemented deferred cron scheduling
 - Used `wp_schedule_single_event()` to delay cron rescheduling
 - Added proper validation checks before accessing options
 - Separated cron scheduling from settings sanitization
 
----
+
 
 ## SECURITY IMPROVEMENTS
 
 ### Authentication & Authorization
 
-#### 1. **Capability Checks** ✅
+#### 1. **Capability Checks** 
 All admin functions now verify `manage_options` capability:
 ```php
 if ( ! current_user_can( 'manage_options' ) ) {
@@ -39,7 +39,7 @@ Applied to:
 - `ajax_delete_now()`
 - `ajax_get_stats()`
 
-#### 2. **Nonce Verification** ✅
+#### 2. **Nonce Verification** 
 All AJAX requests verified with proper nonce:
 ```php
 check_ajax_referer( 'adc_nonce', 'nonce' );
@@ -47,7 +47,7 @@ check_ajax_referer( 'adc_nonce', 'nonce' );
 
 Nonce generated with: `wp_create_nonce( 'adc_nonce' )`
 
-#### 3. **Settings API Protection** ✅
+#### 3. **Settings API Protection** 
 Using WordPress Settings API with proper registration:
 ```php
 register_setting(
@@ -62,7 +62,7 @@ register_setting(
 
 ### Input Sanitization
 
-#### 1. **All User Inputs Sanitized** ✅
+#### 1. **All User Inputs Sanitized** 
 ```php
 $sanitized['batch_size']  = max( 1, min( 50, absint( $input['batch_size'] ) ) );
 $sanitized['interval']    = max( 1, min( 60, absint( $input['interval'] ) ) );
@@ -74,7 +74,7 @@ Using:
 - `max()` and `min()` for range validation
 - Boolean casting for checkboxes
 
-#### 2. **Type Validation** ✅
+#### 2. **Type Validation** 
 Added strict type checking:
 ```php
 if ( ! is_array( $options ) || empty( $options['enabled'] ) ) {
@@ -84,7 +84,7 @@ if ( ! is_array( $options ) || empty( $options['enabled'] ) ) {
 
 ### Output Escaping
 
-#### 1. **All Output Properly Escaped** ✅
+#### 1. **All Output Properly Escaped** 
 - `esc_html()` for text output
 - `esc_attr()` for HTML attributes
 - `esc_url()` for URLs
@@ -97,7 +97,7 @@ name="<?php echo esc_attr( $this->option_name ); ?>"
 echo esc_html( wp_date( get_option( 'date_format' ), $next_run ) );
 ```
 
-#### 2. **Internationalization** ✅
+#### 2. **Internationalization** 
 All strings wrapped in translation functions:
 ```php
 __( 'Text', 'auto-delete-comments' )
@@ -107,13 +107,13 @@ sprintf( __( 'Text %d', 'auto-delete-comments' ), $value )
 
 ### Database Security
 
-#### 1. **Using WordPress Functions** ✅
+#### 1. **Using WordPress Functions** 
 No direct SQL queries - using WordPress APIs:
 - `get_comments()` for retrieving comments
 - `wp_delete_comment()` for deletion
 - `get_option()` / `update_option()` for settings
 
-#### 2. **Prepared Queries** ✅
+#### 2. **Prepared Queries** 
 Date queries using WordPress Date Query:
 ```php
 'date_query' => array(
@@ -123,16 +123,16 @@ Date queries using WordPress Date Query:
 )
 ```
 
-#### 3. **Performance Optimization** ✅
+#### 3. **Performance Optimization** 
 ```php
 'fields' => 'ids', // Only get IDs, not full comment objects
 ```
 
----
+
 
 ## WORDPRESS CODING STANDARDS
 
-### 1. **Naming Conventions** ✅
+### 1. **Naming Conventions** 
 
 #### Class Names
 ```php
@@ -156,7 +156,7 @@ $deleted_count // Snake_case
 MINUTE_IN_SECONDS // All caps with underscores
 ```
 
-### 2. **Spacing & Formatting** ✅
+### 2. **Spacing & Formatting** 
 
 #### Arrays
 ```php
@@ -174,7 +174,7 @@ if ( condition ) {
 }
 ```
 
-### 3. **Documentation** ✅
+### 3. **Documentation** 
 
 #### File Headers
 ```php
@@ -201,7 +201,7 @@ public function delete_comments_batch() {}
 check_ajax_referer( 'adc_nonce', 'nonce' );
 ```
 
-### 4. **Singleton Pattern** ✅
+### 4. **Singleton Pattern** 
 ```php
 private static $instance = null;
 
@@ -213,17 +213,17 @@ public static function get_instance() {
 }
 ```
 
-### 5. **Hook Priority** ✅
+### 5. **Hook Priority** 
 Using `plugins_loaded` for initialization:
 ```php
 add_action( 'plugins_loaded', 'adc_init' );
 ```
 
----
+
 
 ## ADDITIONAL SECURITY MEASURES
 
-### 1. **Direct Access Prevention** ✅
+### 1. **Direct Access Prevention** 
 ```php
 if ( ! defined( 'ABSPATH' ) ) {
     exit;
@@ -234,7 +234,7 @@ Applied to:
 - Main plugin file
 - Admin page template
 
-### 2. **Autoload Optimization** ✅
+### 2. **Autoload Optimization** 
 ```php
 add_option( $this->option_name, $default_options, '', 'no' );
 update_option( 'adc_deletion_log', $log, 'no' );
@@ -242,44 +242,44 @@ update_option( 'adc_deletion_log', $log, 'no' );
 
 Options set to not autoload for better performance.
 
-### 3. **Error Handling** ✅
+### 3. **Error Handling** 
 ```php
 if ( ! wp_delete_comment( $comment_id, true ) ) {
     // Handle failure silently, continue with next
 }
 ```
 
-### 4. **Cron Cleanup** ✅
+### 4. **Cron Cleanup** 
 ```php
 wp_clear_scheduled_hook( $this->cron_hook ); // Removes all scheduled events
 ```
 
-### 5. **Version Control** ✅
+### 5. **Version Control** 
 ```php
 private $version = '1.1.0';
 // Used in asset enqueuing for cache busting
 ```
 
----
+
 
 ## PERFORMANCE OPTIMIZATIONS
 
-### 1. **Efficient Query** ✅
+### 1. **Efficient Query** 
 ```php
 'fields' => 'ids', // Only fetch comment IDs, not full objects
 ```
 
-### 2. **Batch Processing** ✅
+### 2. **Batch Processing** 
 - Limited to 50 comments per batch
 - Prevents memory exhaustion
 - Prevents long-running requests
 
-### 3. **Smart Cron Scheduling** ✅
+### 3. **Smart Cron Scheduling** 
 ```php
 wp_clear_scheduled_hook( $this->cron_hook ); // Clean up before scheduling
 ```
 
-### 4. **Option Defaults** ✅
+### 4. **Option Defaults** 
 ```php
 $options = wp_parse_args(
     get_option( $this->option_name, array() ),
@@ -287,7 +287,7 @@ $options = wp_parse_args(
 );
 ```
 
----
+
 
 ## TESTING CHECKLIST
 
@@ -315,7 +315,7 @@ $options = wp_parse_args(
 - [x] No comment types selected
 - [x] Concurrent deletion requests
 
----
+
 
 ## KNOWN LIMITATIONS
 
@@ -323,25 +323,25 @@ $options = wp_parse_args(
 2. **Cron Dependency**: Requires WordPress cron to be functional
 3. **No Backup**: Comments are permanently deleted (by design)
 
----
+
 
 ## COMPLIANCE
 
 ### WordPress Coding Standards
-✅ **100% Compliant** with WordPress PHP Coding Standards (WPCS)
+**100% Compliant** with WordPress PHP Coding Standards (WPCS)
 
 ### Security Standards
-✅ **Follows** WordPress Plugin Security Best Practices
-- ✅ Proper sanitization
-- ✅ Proper escaping
-- ✅ Capability checks
-- ✅ Nonce verification
-- ✅ No direct database access
+**Follows** WordPress Plugin Security Best Practices
+- Proper sanitization
+- Proper escaping
+- Capability checks
+- Nonce verification
+- No direct database access
 
 ### Accessibility
-✅ **WCAG 2.1 Level AA** compliant admin interface
+**WCAG 2.1 Level AA** compliant admin interface
 
----
+
 
 ## VERSION HISTORY
 
@@ -360,7 +360,7 @@ $options = wp_parse_args(
 - Security vulnerabilities
 - Coding standards violations
 
----
+
 
 ## RECOMMENDATIONS
 
@@ -378,10 +378,10 @@ $options = wp_parse_args(
 4. Passes Plugin Check plugin validation
 5. No deprecated functions used
 
----
+
 
 ## SECURITY CONTACT
 
-For security issues, contact: support@brela.ng
+For security issues, contact: hello@brela.agency
 
 **Please disclose responsibly.**
