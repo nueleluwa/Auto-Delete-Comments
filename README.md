@@ -118,7 +118,7 @@ The plugin features a modern, clean interface with:
 - **Pending** ⚠️ (Caution) - Awaiting moderation
 - **Approved** 🚨 (Danger) - Real user comments
 
----
+  
 
 ## Analytics Dashboard
 
